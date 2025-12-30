@@ -4,9 +4,7 @@ import com.rprojects.gudangku.common.phone.PhoneNumber
 import com.rprojects.gudangku.common.validators.PhoneValidator
 import org.junit.jupiter.api.BeforeEach
 import kotlin.test.Test
-import kotlin.test.assertEquals
 import kotlin.test.assertFalse
-import kotlin.test.assertNotEquals
 import kotlin.test.assertTrue
 
 class PhoneValidatorTest {

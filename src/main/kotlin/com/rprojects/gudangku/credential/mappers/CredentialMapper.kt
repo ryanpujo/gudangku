@@ -4,16 +4,15 @@ import com.rprojects.gudangku.common.phone.PhoneNumber
 import com.rprojects.gudangku.credential.dto.CredentialDto
 import com.rprojects.gudangku.credential.entity.Credential
 import org.mapstruct.Mapper
-import org.mapstruct.Mapping
 import org.mapstruct.MappingConstants
 
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 interface CredentialMapper {
 
-    fun toCredential(dto: CredentialDto): Credential;
+    fun toCredential(dto: CredentialDto): Credential
 
 
-    fun toDto(credential: Credential): CredentialDto;
+    fun toDto(credential: Credential): CredentialDto
 
     fun map(phoneNumber: PhoneNumber): String =
         phoneNumber.normalized

@@ -1,6 +1,5 @@
 package com.rprojects.gudangku.common.validators
 
-import com.rprojects.gudangku.common.phone.PhoneNumber
 import jakarta.validation.ConstraintValidator
 import jakarta.validation.ConstraintValidatorContext
 

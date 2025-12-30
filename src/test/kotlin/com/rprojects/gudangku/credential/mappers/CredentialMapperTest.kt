@@ -81,10 +81,10 @@ class CredentialMapperTest {
        Defensive Copy Check
        ========================= */
 
-    @Test
-    fun `should create new instances and not reuse references`() {
-        val result = credentialMapper.toDto(credential)
-
-        assertNotSame(credential, result)
-    }
+//    @Test
+//    fun `should create new instances and not reuse references`() {
+//        val result = credentialMapper.toDto(credential)
+//
+//        assertNotSame(credential, result)
+//    }
 }

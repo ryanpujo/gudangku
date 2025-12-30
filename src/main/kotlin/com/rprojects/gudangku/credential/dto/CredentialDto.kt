@@ -2,12 +2,10 @@ package com.rprojects.gudangku.credential.dto
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.rprojects.gudangku.common.phone.PhoneNumber
-import com.rprojects.gudangku.common.validators.ValidPhone
 import com.rprojects.gudangku.credential.entity.AccountStatus
 import jakarta.validation.Valid
 import jakarta.validation.constraints.Email
 import jakarta.validation.constraints.NotBlank
-import jakarta.validation.constraints.Pattern
 import jakarta.validation.constraints.Size
 
 data class CredentialDto(
