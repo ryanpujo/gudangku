@@ -17,6 +17,6 @@ data class PhoneNumber(
     @get:Transient
     val normalized: String get() {
 
-        return "$countryCode$number"
+        return "($countryCode)$number"
     }
 }
