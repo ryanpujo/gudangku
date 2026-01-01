@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test
 import org.mapstruct.factory.Mappers
 import kotlin.test.assertEquals
 
-import org.junit.jupiter.api.Assertions.*
 
 class CredentialMapperTest {
 
