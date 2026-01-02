@@ -23,7 +23,7 @@ class CredentialMapperTest {
             username = "ryanpujo",
             password = "okeoke",
             email = "ryanpuj0@gmail.com",
-            phoneNumber = "(+62)85179812246"
+            phoneNumber = "(+622)85179812246"
         )
 
         dto = CredentialDto(
@@ -32,7 +32,7 @@ class CredentialMapperTest {
             email = "ryanpuj0@gmail.com",
             phoneNumber = PhoneNumber(
                 "85179812246",
-                "+62"
+                "+622"
             )
         )
     }

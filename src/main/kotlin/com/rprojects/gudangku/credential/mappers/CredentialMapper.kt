@@ -21,7 +21,7 @@ interface CredentialMapper {
     }
 
     fun map(phoneNumber: String): PhoneNumber {
-        val regex = Regex("""^(\(\+\d{1,3}\))([1-9]{3}[0-9]{3,4}[0-9]{4,5})$""")
+        val regex = Regex("""^(\(\+\d{1,3}\))([1-9]\d{6,13})$""")
         val match = regex.find(phoneNumber) ?:
             throw IllegalArgumentException("invalid phone number: $phoneNumber")
 
