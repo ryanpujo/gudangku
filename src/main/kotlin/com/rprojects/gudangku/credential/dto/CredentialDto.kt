@@ -2,6 +2,7 @@ package com.rprojects.gudangku.credential.dto
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.rprojects.gudangku.common.phone.PhoneNumber
+import com.rprojects.gudangku.common.validators.password.StrongPassword
 import com.rprojects.gudangku.credential.entity.AccountStatus
 import jakarta.validation.Valid
 import jakarta.validation.constraints.Email
@@ -14,6 +15,7 @@ data class CredentialDto(
 
     @field:NotBlank(message = "password is required")
     @field:Size(min = 5, message = "password must be at least 5 characters")
+    @field:StrongPassword
     val password: String,
 
     @field:NotBlank(message = "email is required")
