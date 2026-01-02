@@ -10,6 +10,6 @@ class PhoneValidator : ConstraintValidator<ValidPhone, String> {
     ): Boolean {
         if (value.isNullOrBlank()) return false
 
-        return value.matches(Regex("^[1-9]{3}[0-9]{3,4}[0-9]{4,5}$"))
+        return value.matches(Regex("""^[1-9]\d{6,13}$"""))
     }
 }
