@@ -9,7 +9,7 @@ import java.util.Optional
 interface CredentialRepo : JpaRepository<Credential, String> {
     fun existsByEmail(email: String): Boolean
     fun existsByPhoneNumber(phoneNumber: String): Boolean
-    fun findByEmail(email: String): Optional<Credential>
-    fun findByPhoneNumber(phoneNumber: String): Optional<Credential>
+//    fun findByEmail(email: String): Optional<Credential>
+//    fun findByPhoneNumber(phoneNumber: String): Optional<Credential>
     fun findByUsername(username: String): Optional<Credential>
 }
