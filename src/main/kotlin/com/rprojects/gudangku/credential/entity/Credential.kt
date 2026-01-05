@@ -5,6 +5,10 @@ import jakarta.persistence.Entity
 import jakarta.persistence.EnumType
 import jakarta.persistence.Enumerated
 import jakarta.persistence.Id
+import org.hibernate.annotations.CreationTimestamp
+import org.hibernate.annotations.UpdateTimestamp
+import java.time.Instant
+import java.time.LocalDateTime
 
 
 enum class AccountStatus {
@@ -30,13 +34,21 @@ data class Credential(
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    val accountStatus: AccountStatus = AccountStatus.DISABLED
+    val accountStatus: AccountStatus = AccountStatus.DISABLED,
+
+    @CreationTimestamp
+    var createdAt: Instant? = null,
+
+    @UpdateTimestamp
+    var updatedAt: Instant? = null
 ) {
     protected constructor(): this(
         username = "",
         password = "",
         email = "",
         phoneNumber = "",
-        accountStatus = AccountStatus.DISABLED
+        accountStatus = AccountStatus.DISABLED,
+        createdAt = null,
+        updatedAt = null
     )
 }
